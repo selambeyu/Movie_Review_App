@@ -19,7 +19,7 @@ export const reviewSlice = createApi({
       query: (initialReview) => ({
         url: "/reviews",
         method: "POST",
-        body: initialUser,
+        body: initialReview,
       }),
       invalidatesTags: ["Review"],
     }),
